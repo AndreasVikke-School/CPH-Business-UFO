@@ -1,4 +1,4 @@
-# RealSetExercise
+# Image Secret Message Decoder
 
 ### Exercise 1:
 ![Exercise1](./assets/exercise.png)
