@@ -1,0 +1,40 @@
+\section{Table}
+
+Her har vi to tabeller, tabel \ref{table:align} som viser hvordan amn kan aligne items i columns og \ref{table:deep} som viser en dybere måde at lave tabeller på
+
+\begin{table}[ht]
+    \centering
+    \begin{tabularx}{0.8\textwidth} { 
+        | >{\raggedright\arraybackslash}X 
+        | >{\centering\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}X | }
+       \hline
+       item 11 & item 12 & item 13 \\
+       \hline
+       item 21  & item 22  & item 23  \\
+      \hline
+    \end{tabularx}
+    \caption{Alignment Table}
+    \label{table:align}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{ |p{3.5cm}||p{3.5cm}|p{3.5cm}|p{3.5cm}|  }
+        \hline
+        \multicolumn{4}{|c|}{Country List} \\
+        \hline
+        Country Name or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 Code&ISO numeric Code\\
+        \hline
+        Afghanistan   & AF    &AFG&   004\\
+        Aland Islands&   AX  & ALA   &248\\
+        Albania &AL & ALB&  008\\
+        Algeria    &DZ & DZA&  012\\
+        American Samoa&   AS  & ASM&016\\
+        Andorra& AD  & AND   &020\\
+        Angola& AO  & AGO&024\\
+        \hline
+    \end{tabular}
+    \caption{Deep Table}
+    \label{table:deep}
+\end{table}

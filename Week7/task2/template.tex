@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{todonotes}
+\usepackage{url}
+
+% Code Listing
+\usepackage{listings}
+\usepackage{color}
+\usepackage{caption}
+\import{codecolors/}{csharp.tex}
+
+\graphicspath{ {./images/} }
+
+
+\title{Thesis Tempalte}
+\author{
+    Andreas Zoega Vesterborg Vikke\\
+    \texttt{cph-av105}
+    \and
+    (Asger Hermind Sørensen)\\
+    \texttt{cph-as466}
+    \and
+    (Martin Eli Frederiksen)\\
+    \texttt{cph-mf237}
+    \and
+    (William Sehested Huusfeldt)\\
+    \texttt{cph-wh106}
+}
+\date{Februar 2021}
+
+\begin{document}
+
+\listoftodos
+\todo{Remove List Todo Package Before Submission}
+
+\maketitle
+\tableofcontents
+
+\chapter{Examples}
+\import{sections/}{danish.tex}
+\import{sections/}{graphics.tex}
+\import{sections/}{sections.tex}
+\import{sections/}{list.tex}
+\import{sections/}{table.tex}
+\import{sections/}{codelisting.tex}
+\import{sections/}{math.tex}
+\import{sections/}{references.tex}
+
+\bibliographystyle{plain}
+\bibliography{template-references}
+
+\end{document}
