@@ -6,15 +6,15 @@ import java.io.IOException;
 public class Profiler {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         System.out.println("Before Optimization:");
-        double i = CheckMethodTimeOld();
+        // double i = CheckMethodTimeOld();
         System.out.println("After Optimization:");
         double o = CheckMethodTimeNew();
-        System.out.println(i + o);
+        // System.out.println(i + o);
     }
 
     public static double CheckMethodTimeOld() throws FileNotFoundException, IOException {
         int n = 10;
-        int count = 1000;
+        int count = 50;
         double dummy = 0.0;
         double st = 0.0, sst = 0.0;
 
@@ -34,7 +34,7 @@ public class Profiler {
 
       public static double CheckMethodTimeNew() throws FileNotFoundException, IOException {
         int n = 10;
-        int count = 100;
+        int count = 1000;
         double dummy = 0.0;
         double st = 0.0, sst = 0.0;
 

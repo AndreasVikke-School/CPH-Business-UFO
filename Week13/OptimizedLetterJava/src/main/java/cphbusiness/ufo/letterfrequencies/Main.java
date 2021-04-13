@@ -1,5 +1,6 @@
 package cphbusiness.ufo.letterfrequencies;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         String fileName = "C:/Users/Andreas Vikke/OneDrive/Documents/Skole/SoftwareUdvikling/CPH-Business-UFO/Week13/letterfrequencies/src/main/resources/FoundationSeries.txt";
-        Reader reader = new FileReader(fileName);
+        BufferedReader reader = new BufferedReader(new FileReader(fileName), 16384);
         long freq[] = new long[256];
         tallyChars(reader, freq);
         print_tally(freq);
@@ -29,7 +30,7 @@ public class Main {
 
     public static double Run() throws FileNotFoundException, IOException {
         String fileName = "C:/Users/Andreas Vikke/OneDrive/Documents/Skole/SoftwareUdvikling/CPH-Business-UFO/Week13/letterfrequencies/src/main/resources/FoundationSeries.txt";
-        Reader reader = new FileReader(fileName);
+        BufferedReader reader = new BufferedReader(new FileReader(fileName), 16384);
         long freq[] = new long[256];
         tallyChars(reader, freq);
         print_tally(freq);
@@ -59,7 +60,7 @@ public class Main {
                                 LinkedHashMap::new));
                                 
         for (Character c : sorted.keySet()) {
-            System.out.println("" + c + ": " + sorted.get(c));
+            // System.out.println("" + c + ": " + sorted.get(c));
         }
     }
 }

@@ -53,7 +53,7 @@ public class Old {
                         toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
                                 LinkedHashMap::new));
         for (Character c : sorted.keySet()) {
-            System.out.println("" + c + ": " + sorted.get(c));
+            // System.out.println("" + c + ": " + sorted.get(c));
         }
     }
 }
